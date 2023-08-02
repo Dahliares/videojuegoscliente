@@ -1,11 +1,14 @@
 import './Main.css';
+import { ListaJuegos } from '../components/ListaJuegos';
 
-export const Main = () =>{
+export const Main = () => {
 
+   
+    return (
+        <div className="main">
+            <h1>Listado de juegos</h1>
+           <ListaJuegos />
 
-
-    return(
-          <div className="main">lorem*50
-          </div>
+        </div>
     )
 }

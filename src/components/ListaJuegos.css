@@ -1,0 +1,41 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+.tabla-juegos{
+
+    width: 90%;
+    margin: 20px auto;
+    font-family: 'Montserrat', sans-serif;
+    border-collapse:collapse;
+    
+}
+
+thead{
+
+    font-weight: bolder;
+    text-align: center;
+    background-color: fuchsia;
+}
+
+tbody{
+
+    text-align: center;
+    font-size: 13px;
+    
+    
+}
+
+td, th{
+    padding: 8px;
+}
+
+tbody tr:nth-child(even) {
+
+    background-color: #eee;
+
+    }
+
+ tbody tr:nth-child(odd) {
+
+    background-color:#fadddd;
+
+    }
