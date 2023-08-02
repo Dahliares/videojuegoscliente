@@ -46,6 +46,7 @@ console.log(juegos);
                         <th>Idioma</th>
                         <th>Estado</th>
                         <th>Compañia</th>
+                        
                     </tr>
                 </thead>
                 <tbody>
@@ -60,7 +61,8 @@ console.log(juegos);
                             <td >{item.formato}</td>
                             <td >{item.idioma}</td>
                             <td >{item.estado}</td>
-                            <td >{item.compania}</td>                            
+                            <td >{item.compania}</td> 
+                                                       
                          </tr>                     
 
                     ))}

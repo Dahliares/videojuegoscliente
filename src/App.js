@@ -2,6 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
 import { Main } from './pages/Main';
+import { Detalle } from './components/Detalle';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
 
         <Routes>
           <Route index path='/' element={<Main />} />
-          <Route path='/videojuego/:id' element={<div>detalle</div>} />
+          <Route path='/videojuego/:id' element={<Detalle />} />
         
         </Routes>
 
