@@ -4,7 +4,8 @@ body{
 }
 
 
-.main{
+.main,
+.info{
 
     margin-top: 100px;
 }

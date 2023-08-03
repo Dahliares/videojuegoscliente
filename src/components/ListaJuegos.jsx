@@ -2,12 +2,15 @@ import { useEffect, useState } from 'react';
 import './ListaJuegos.css'
 import { Loading } from './Loading';
 
+import { LogoConsola } from '../Utils/LogoConsola';
+
 
 export function ListaJuegos() {
 
 
 const [juegos, setJuegos] = useState([]);
 const [isLoading, setIsLoading] = useState(false);
+
 
 useEffect(() => {
     setIsLoading(true);
@@ -28,51 +31,53 @@ console.log(juegos);
 
 
     return (
-        <>
-        
+        <>        
 
-        {isLoading ? <Loading /> : ""}
-        
+        {isLoading ? <Loading /> : 
         <div className='listado-juegos'>
-            <table className='tabla-juegos'>
-                <thead>
-                    <tr>
-                        
-                        <th>Nombre</th>
-                        <th>Consola</th>
-                        <th>Tipo</th>
-                        <th>Saga</th>
-                        <th>Formato</th>
-                        <th>Idioma</th>
-                        <th>Estado</th>
-                        <th>Compañia</th>
-                        
-                    </tr>
-                </thead>
-                <tbody>
-                    {juegos.map((item) => (
-                                              
-                         <tr key={item.id}>
-                           
-                            <td >{item.nombre}</td>
-                            <td >{item.consola}</td>
-                            <td >{item.tipo}</td>
-                            <td >{item.saga}</td>
-                            <td >{item.formato}</td>
-                            <td >{item.idioma}</td>
-                            <td >{item.estado}</td>
-                            <td >{item.compania}</td> 
-                                                       
-                         </tr>                     
+        <table className='tabla-juegos'>
+            <thead>
+                <tr>
+                    
+                    <th>Nombre</th>
+                    <th>Consola</th>
+                    <th>Tipo</th>
+                    <th>Saga</th>
+                    <th>Formato</th>
+                    <th>Idioma</th>
+                    <th>Estado</th>
+                    <th>Compañia</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                {juegos.map((item) => (
+                                          
+                     <tr key={item.id}>
+                       
+                        <td >{item.nombre}</td>
+                        <td ><LogoConsola consola={item.consola}/></td>
+                        <td >{item.tipo}</td>
+                        <td >{item.saga}</td>
+                        <td >{item.formato}</td>
+                        <td >{item.idioma}</td>
+                        <td >{item.estado}</td>
+                        <td >{item.compania}</td> 
+                                                   
+                     </tr>                     
 
-                    ))}
-                </tbody>
+                ))}
+            </tbody>
 
-            </table>
+        </table>
 
-            
+        
 
-        </div>
+    </div>
+
+        }
+        
+        
     </>
     )
 }
