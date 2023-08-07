@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './ListaJuegos.css'
 import { Loading } from './Loading';
+import {Link} from 'react-router-dom';
 
 import { LogoConsola } from '../Utils/LogoConsola';
 
@@ -47,6 +48,7 @@ console.log(juegos);
                     <th>Idioma</th>
                     <th>Estado</th>
                     <th>Compañia</th>
+                    <th>Info</th>
                     
                 </tr>
             </thead>
@@ -63,6 +65,7 @@ console.log(juegos);
                         <td >{item.idioma}</td>
                         <td >{item.estado}</td>
                         <td >{item.compania}</td> 
+                        <td><Link to={`/videojuego/${item.id}`} >Info</Link></td>
                                                    
                      </tr>                     
 

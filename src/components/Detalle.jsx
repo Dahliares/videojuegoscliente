@@ -1,3 +1,4 @@
+import { LogoConsola } from '../Utils/LogoConsola';
 import './Detalle.css';
 import { Loading } from './Loading';
 import { useEffect, useState } from 'react';
@@ -32,18 +33,18 @@ export const Detalle = () => {
                     <h2>{juego?.nombre}</h2>
                     <div className="detalle-container">
                         
-                        <img className='detalle-img' src={juego?.img} alt={juego?.nombre} />
+                      <img className='detalle-img' src={juego?.img} alt={juego?.nombre} />
 
                         <div className="detalles">
                             
-                            <div><strong>Consola: </strong> <br />{juego?.consola}</div>
+                            <div><strong>Consola: </strong> <br /><LogoConsola consola={juego?.consola}/></div>
                             <div><strong>Tipo: </strong> <br />{juego?.tipo}</div>
                             <div><strong>Saga: </strong> <br />{juego?.saga}</div>
                             <div><strong>Formato: </strong> <br />{juego?.formato}</div>
                             <div><strong>Idioma: </strong> <br />{juego?.idioma}</div>
                             <div><strong>Estado: </strong> <br />{juego?.estado}</div>
                             <div><strong>Compañia: </strong> <br />{juego?.compania}</div>
-                            <div><strong>Comentarios: </strong> <br />{juego?.comentario}</div>
+                            <div><strong>Comentarios: </strong> <br />{juego?.comentarios}</div>
                         </div>
                     </div>
 

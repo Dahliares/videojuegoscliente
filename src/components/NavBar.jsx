@@ -33,13 +33,13 @@ export function NavBar() {
                         <NavLink 
                         to="/" 
                         className={({ isActive }) => (isActive ? "selected navlink" : "navlink")} 
-                        onClick={() => {setIsOpen(false)}}>Galería</NavLink>
+                        onClick={() => {setIsOpen(false)}}>Biblioteca</NavLink>
                     </li>
                     <li>
                         <NavLink 
-                        to="/perfil" 
+                        to="/add" 
                         className={({ isActive }) => (isActive ? "selected navlink" : "navlink")} 
-                        onClick={() => {setIsOpen(false)}}>Perfil</NavLink>
+                        onClick={() => {setIsOpen(false)}}>Añadir</NavLink>
                     </li>
                     <li>
                         <NavLink 

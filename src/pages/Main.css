@@ -1,13 +1,17 @@
 body{
 
     background-color: lightblue;
+    margin: 0;
+    
 }
 
 
 .main,
-.info{
+.info,
+.add{
 
     margin-top: 100px;
+    min-height: 100vh;
 }
 
 h1{

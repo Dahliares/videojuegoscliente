@@ -1,0 +1,36 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+.form{
+
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 10px  auto 20px auto;
+    gap: 10px;
+    background-color: lightgray;
+    padding: 30px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 15px;
+}
+legend{
+    font-size: 20px;
+    font-style: italic;
+    padding: 0 10px;
+}
+
+input, textarea, select{
+
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.btn{
+
+    background-color: blueviolet;
+    color: aliceblue;
+    width: 200px;
+    align-self: center;
+    margin: 10px;
+}
